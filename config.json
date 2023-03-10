@@ -1,0 +1,47 @@
+{
+    
+    "remove_directories": [
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+    ],
+
+    "clear_directories": [
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+    ],
+
+    "zip_directories": [
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
+        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+    ],
+
+    "file_patterns": [
+        {
+            "dir_path": "/developers/Vasilis/MyProjects/test/",
+            "pattern": "*.txt"
+        },
+        {
+            "dir_path": "/developers/Vasilis/MyProjects/test2/",
+            "pattern": ".txt"
+        }
+    ],
+
+    "move_files": [
+        {
+            "source": "/developers/Vasilis/MyProjects/test/file1.txt",
+            "target": "/developers/Vasilis/MyProjects/test2/file2.txt"
+        },
+        {
+            "source": "/developers/Vasilis/MyProjects/test/file1.txt",
+            "target": "/developers/Vasilis/MyProjects/test2/file2.txt"
+        },
+        {
+            "source": "/developers/Vasilis/MyProjects/test/file1.txt",
+            "target": "/developers/Vasilis/MyProjects/tes2/file2.txt"
+        }
+    ]
+
+}
