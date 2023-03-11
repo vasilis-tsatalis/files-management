@@ -66,8 +66,8 @@ def delete_file_pattern():
         pattern = i['pattern']
 
         # Search files with extension in current directory
-        pattern = path+pattern
-        files = glob.glob(pattern)
+        data = path+pattern
+        files = glob.glob(data)
 
         # deleting the files with txt extension
         for file in files:
