@@ -1,31 +1,37 @@
 {
     
     "remove_directories": [
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+        {"dir_path": "/developers/Vasilis/MyProjects/test1/"}
     ],
 
     "clear_directories": [
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+        {"dir_path": "/developers/Vasilis/MyProjects/test1/"}
     ],
 
     "zip_directories": [
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"},
-        {"dir_path": "/developers/Vasilis/MyProjects/test/"}
+        {
+            "dir_path": "/developers/Vasilis/MyProjects/test/",
+            "zip_name": "test1.zip"
+        },
+        {
+            "dir_path": "/developers/Vasilis/MyProjects/test/",
+            "zip_name": "test2.zip"
+        }
+    ],
+
+    "extract_directories": [
+        {"fullname": "/developers/Vasilis/MyProjects/test1/file1.zip"},
+        {"fullname": "/developers/Vasilis/MyProjects/test1/file2.zip"}
     ],
 
     "file_patterns": [
         {
-            "dir_path": "/developers/Vasilis/MyProjects/test/",
+            "dir_path": "/developers/Vasilis/MyProjects/test1/",
             "pattern": "*.txt"
         },
         {
             "dir_path": "/developers/Vasilis/MyProjects/test2/",
-            "pattern": ".txt"
+            "pattern": "*.txt"
         }
     ],
 
@@ -41,6 +47,18 @@
         {
             "source": "/developers/Vasilis/MyProjects/test/file1.txt",
             "target": "/developers/Vasilis/MyProjects/tes2/file2.txt"
+        }
+    ],
+
+    "remove_file": [
+        {"fullname": "/developers/Vasilis/MyProjects/test1/file1.txt"},
+        {"fullname": "/developers/Vasilis/MyProjects/test1/file2.txt"}
+    ],
+
+    "move_dir": [
+        {
+            "source": "/developers/Vasilis/MyProjects/test1/",
+            "target": "/developers/Vasilis/MyProjects/test2/"
         }
     ]
 
