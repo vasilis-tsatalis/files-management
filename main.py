@@ -34,6 +34,10 @@ def main(args):
 
     elif args.action == 'mv_dir':
         move_directory()
+        
+    elif args.action == 'rd_file':
+        filename = args.filename
+        extract_directory(filename)
 
     else:
         ValueError ("Parameter arg {} is not valid.".format(args.action))
@@ -42,8 +46,9 @@ def main(args):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Files - Directories Management')
-    parser.add_argument('--action', type=str, dest='action', choices = ['rm_dir', 'clear_dir', 'rm_file', 'rm_ftype', 'zip_dir', 'extr_dir', 'mv_dir'], help='Action to do', required=True)
+    parser.add_argument('--action', type=str, dest='action', choices = ['rm_dir', 'clear_dir', 'rm_file', 'rm_ftype', 'zip_dir', 'extr_dir', 'mv_dir', 'rd_file'], help='Action to do', required=True)
     parser.add_argument('--pattern', type=str, dest='pattern', help='File pattern type. Example: to delete all text files from a directory, add ".*txt"')
     parser.add_argument('--zipname', type=str, dest='zipname', help='Zip or Unzip name', default='test.zip')
+    parser.add_argument('--filename', type=str, dest='filename', help='Full path filename', default='./test.csv')
     args = parser.parse_args()
     main(args)
